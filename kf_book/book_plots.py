@@ -136,7 +136,7 @@ def predict_update_chart(box_bg = '#CCCCCC',
                                 patchA=pc,
                                 connectionstyle="arc3,rad=-0.5"))
 
-    ax.annotate('Measurement ($\mathbf{z_k}$)',
+    ax.annotate(r'Measurement ($\mathbf{z_k}$)',
                 xy=(6.3, 5.6),  xycoords='data',
                 xytext=(6,6), textcoords='data',
                 size=14,
@@ -151,14 +151,14 @@ def predict_update_chart(box_bg = '#CCCCCC',
                 arrowprops=dict(arrowstyle="simple",
                                 fc="0.6", ec="none"))
 
-    ax.annotate('Initial\nConditions ($\mathbf{x_0}$)',
+    ax.annotate(r'Initial\nConditions ($\mathbf{x_0}$)',
                 xy=(4.05, 5.7),  xycoords='data',
                 xytext=(2.5, 6.5), textcoords='data',
                 size=14,
                 arrowprops=dict(arrowstyle="simple",
                                 fc="0.6", ec="none"))
 
-    plt.text (4, 3.7,'State Estimate ($\mathbf{\hat{x}_k}$)',
+    plt.text (4, 3.7,r'State Estimate ($\mathbf{\hat{x}_k}$)',
               ha='center', va='center', fontsize=14)
     plt.axis('equal')
     plt.show()
